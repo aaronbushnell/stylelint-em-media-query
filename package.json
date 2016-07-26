@@ -1,0 +1,30 @@
+{
+  "name": "stylelint-em-media-query",
+  "version": "1.0.0",
+  "description": "Warns or errors when using any unit besides 'em' in media queries",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronbushnell/stylelint-em-media-query.git"
+  },
+  "keywords": [
+    "stylelint-rule",
+    "stylelint",
+    "css"
+  ],
+  "author": "Aaron Bushnell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aaronbushnell/stylelint-em-media-query/issues"
+  },
+  "homepage": "https://github.com/aaronbushnell/stylelint-em-media-query#readme",
+  "dependencies": {
+    "primer-utilities": "^0.5.0",
+    "style-search": "^0.1.0",
+    "stylelint": "^7.0.0"
+  },
+  "devDependencies": {
+    "stylelint-test-rule-tape": "^0.2.0"
+  }
+}
