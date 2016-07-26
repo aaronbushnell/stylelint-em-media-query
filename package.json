@@ -1,6 +1,6 @@
 {
   "name": "stylelint-em-media-query",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Warns or errors when using any unit besides 'em' in media queries",
   "main": "index.js",
   "scripts": {},
