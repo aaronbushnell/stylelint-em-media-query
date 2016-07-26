@@ -12,18 +12,17 @@ module.exports = stylelint.createPlugin(ruleName, function (enabled) {
 
     if (!validOptions) { return }
 
+    var regexTest = /@media\s?\(min-width:\s?[0-9]*(px|rem|cm|%)\)/;
+
     root.walkAtRules(function (statement) {
-      styleSearch({
-        source: statement.toString(),
-        target: /@media\s?\(min-width:\s?[0-9]*(px|rem|cm)\)/,
-      }, function (match, count) {
+      if (regexTest.test(statement.toString())) {
         stylelint.utils.report({
           ruleName: ruleName,
           result: result,
           node: statement,
           message: 'Expected "em" units for media query.'
         });
-      });
+      }
     })
   }
 })
